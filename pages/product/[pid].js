@@ -5,9 +5,14 @@ const ProductDetails = () => {
   const router = useRouter();
   console.log(router.query);
   const { pid } = router.query;
+  const handleOrder = () => {
+    console.log('order placed', pid);
+    router.push('/product');
+  };
   return (
     <div>
       <p>Product: {pid}</p>
+      <button onClick={handleOrder}>place holder</button>
     </div>
   );
 };
