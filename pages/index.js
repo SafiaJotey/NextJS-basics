@@ -4,11 +4,11 @@ import React from 'react';
 const index = () => {
   return (
     <div>
-      <h1>Home Page</h1>
+      <h1> welcome to Home Page</h1>
       <Link href="/product">
         <a>Product</a>
       </Link>
-      <Link href="/Blogs">
+      <Link href="/blogs">
         <a>Blogs</a>
       </Link>
       <Link href="/users">
