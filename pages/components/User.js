@@ -1,12 +1,19 @@
 import React from 'react';
 
 const User = (props) => {
-  console.log(props);
-  const { username, email } = props.user;
+  console.log(props.user);
+
   return (
     <div>
-      <p>hello {username}</p>
-      <p>Your mail is {email}</p>
+      {/* <p>hello {name}</p> */}
+      {props.user ? (
+        <div>
+          <p>Your name is {props.user.name}</p>
+          <p>Your mail is {props.user.email}</p>
+        </div>
+      ) : (
+        <p>no data</p>
+      )}
     </div>
   );
 };

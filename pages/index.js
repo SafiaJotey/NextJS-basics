@@ -11,7 +11,7 @@ const index = () => {
       <Link href="/blogs">
         <a>Blogs</a>
       </Link>
-      <Link href="/users">
+      <Link href="/userslist">
         <a>Users</a>
       </Link>
     </div>

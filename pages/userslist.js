@@ -1,7 +1,7 @@
 import React from 'react';
-import User from './components/user';
+import User from './components/User';
 
-const Users = ({ users }) => {
+const UserList = ({ users }) => {
   return (
     <div>
       <h3>List of users</h3>
@@ -12,13 +12,13 @@ const Users = ({ users }) => {
   );
 };
 
-export default Users;
+export default UserList;
 export const getStaticProps = async () => {
   const response = await fetch('https://jsonplaceholder.typicode.com/users');
   const data = await response.json();
   return {
     props: {
-      users: data,
+      users: data.slice(0, 3),
     },
   };
 };
